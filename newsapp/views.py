@@ -5,7 +5,7 @@ from newsapi import NewsApiClient
 
 def index(request):
     
-    NewsApi=NewsApiClient(api_key='63bd5808cfce4606bce27c2f5af5cf36')
+    NewsApi=NewsApiClient(api_key)
     top=NewsApi.get_top_headlines(sources='the-verge')
     
     latest_news=top['articles']
